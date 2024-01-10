@@ -26,6 +26,11 @@
     "vite": "^5.0.11"
   },
   "dependencies": {
+    "@koin/eslint-config": "*",
+    "@koin/ts-config": "*",
+    "@koin/react-webview": "*",
+    "@koin/tokens": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

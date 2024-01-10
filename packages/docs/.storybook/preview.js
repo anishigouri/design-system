@@ -1,6 +1,11 @@
+import { themes } from '@storybook/theming'
+
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
+    backgrounds: {
+      default: 'dark'
+    },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
@@ -8,6 +13,9 @@ const preview = {
         date: /Date$/i,
       },
     },
+    docs: {
+      theme: themes.dark
+    }
   },
 };
 
