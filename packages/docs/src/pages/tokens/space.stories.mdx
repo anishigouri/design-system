@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/addon-docs'
+import { Unstyled } from '@storybook/blocks'
 import { TokensGrid } from '../../components/TokensGrid'
 import { space } from '@koin/tokens'
 
@@ -6,4 +7,6 @@ import { space } from '@koin/tokens'
 
 # Space
 
-<TokensGrid tokens={space} hasRemValue />
+<Unstyled>
+  <TokensGrid tokens={space} hasRemValue />
+</Unstyled>

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
+    "build-vite": "tsc && vite build",
     "build": "storybook build"
   },
   "keywords": [],
@@ -27,9 +28,10 @@
   },
   "dependencies": {
     "@koin/eslint-config": "*",
-    "@koin/ts-config": "*",
     "@koin/react-webview": "*",
     "@koin/tokens": "*",
+    "@koin/ts-config": "*",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
