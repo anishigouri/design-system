@@ -1,5 +1,11 @@
 # @allan-koin/tokens
 
+## 2.2.0
+
+### Minor Changes
+
+- Add options to pass reference to textInput and some styles
+
 ## 2.1.0
 
 ### Minor Changes
