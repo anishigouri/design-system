@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from '@koin/react-webview'
+import { Heading, HeadingProps } from '@allan-koin/react-webview'
 
 export default {
   title: 'Typography/Heading',

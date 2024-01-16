@@ -1,6 +1,6 @@
 {
-  "name": "@koin/tokens",
-  "version": "1.0.0",
+  "name": "@allan-koin/tokens",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@koin/ts-config": "*",
-    "@koin/eslint-config": "*",
+    "@allan-koin/ts-config": "*",
+    "@allan-koin/eslint-config": "*",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   }

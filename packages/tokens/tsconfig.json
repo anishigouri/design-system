@@ -1,4 +1,4 @@
 {
-  "extends": "@koin/ts-config/base.json",
+  "extends": "@allan-koin/ts-config/base.json",
   "include": ["src"]
 }

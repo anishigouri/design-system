@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@koin/tokens'
+} from '@allan-koin/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

@@ -1,4 +1,4 @@
 {
-  "extends": "@koin/ts-config/react.json",
+  "extends": "@allan-koin/ts-config/react.json",
   "include": ["src"]
 }

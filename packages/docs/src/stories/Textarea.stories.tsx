@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextArea, TextAreaProps } from '@koin/react-webview'
+import { Box, Text, TextArea, TextAreaProps } from '@allan-koin/react-webview'
 
 export default {
   title: 'Form/Text Area',

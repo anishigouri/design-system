@@ -1,5 +1,5 @@
 {
-  "name": "@koin/docs",
+  "name": "@allan-koin/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,10 +28,10 @@
     "vite": "^5.0.11"
   },
   "dependencies": {
-    "@koin/eslint-config": "*",
-    "@koin/react-webview": "*",
-    "@koin/tokens": "*",
-    "@koin/ts-config": "*",
+    "@allan-koin/eslint-config": "*",
+    "@allan-koin/react-webview": "*",
+    "@allan-koin/tokens": "*",
+    "@allan-koin/ts-config": "*",
     "@storybook/addon-a11y": "^7.6.7",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",

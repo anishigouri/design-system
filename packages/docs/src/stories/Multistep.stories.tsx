@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, MultiStep, MultiStepProps } from '@koin/react-webview'
+import { Box, MultiStep, MultiStepProps } from '@allan-koin/react-webview'
 
 export default {
   title: 'Form/Multi Step',

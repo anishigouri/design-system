@@ -1,4 +1,4 @@
-import { colors } from '@koin/tokens'
+import { colors } from '@allan-koin/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

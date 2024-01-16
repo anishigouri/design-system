@@ -1,6 +1,6 @@
 {
-  "name": "@koin/react-webview",
-  "version": "1.0.0",
+  "name": "@allan-koin/react-webview",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@koin/eslint-config": "*",
-    "@koin/tokens": "*",
-    "@koin/ts-config": "*",
+    "@allan-koin/eslint-config": "*",
+    "@allan-koin/tokens": "*",
+    "@allan-koin/ts-config": "*",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",

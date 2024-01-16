@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@koin/react-webview'
+import { Box, BoxProps, Text } from '@allan-koin/react-webview'
 
 export default {
   title: 'Surfaces/Box',
