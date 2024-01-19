@@ -6,7 +6,7 @@ export default {
   component: Box,
 
   args: {
-    children: <Text>Testando elemento box</Text>,
+    children: <Text color='$neutral-800'>Testando elemento box</Text>,
   },
   argTypes: {
     children: {

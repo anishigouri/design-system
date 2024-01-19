@@ -60,6 +60,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var src_exports = {};
 __export(src_exports, {
   Avatar: () => Avatar2,
+  Badge: () => Badge,
   Box: () => Box,
   Button: () => Button,
   Checkbox: () => Checkbox2,
@@ -67,26 +68,107 @@ __export(src_exports, {
   MultiStep: () => MultiStep,
   Text: () => Text,
   TextArea: () => TextArea,
-  TextInput: () => TextInput
+  TextInput: () => TextInput,
+  config: () => config,
+  createTheme: () => createTheme,
+  css: () => css,
+  getCssText: () => getCssText,
+  globalCss: () => globalCss,
+  keyframes: () => keyframes,
+  styled: () => styled,
+  theme: () => theme
 });
 module.exports = __toCommonJS(src_exports);
 
 // ../tokens/dist/index.mjs
 var colors = {
-  white: "#FFF",
-  black: "#000",
-  gray100: "#E1E1E6",
-  gray200: "#A9A9B2",
-  gray400: "#7C7C8A",
-  gray500: "#505059",
-  gray600: "#323238",
-  gray700: "#29292E",
-  gray800: "#202024",
-  gray900: "#121214",
-  ignite300: "#00B37E",
-  ignite500: "#00875F",
-  ignite700: "#015F43",
-  ignite900: "#00291D"
+  white: "#ffffff",
+  black: "#000000",
+  "lime-green-25": "#FBFFF5",
+  "lime-green-50": "#F7FFEB",
+  "lime-green-100": "#EAFFCD",
+  "lime-green-200": "#D6FF9B",
+  "lime-green-300": "#C1FF69",
+  "lime-green-400": "#ACFF36",
+  "lime-green-500": "#98FF04",
+  "lime-green-600": "#79CC03",
+  "lime-green-700": "#5B9903",
+  "lime-green-800": "#3D6602",
+  "lime-green-900": "#1E3301",
+  "lime-green-950": "#152301",
+  "green-25": "#F6FEF8",
+  "green-50": "#E4FBE9",
+  "green-100": "#D0F8D8",
+  "green-200": "#A1F1B2",
+  "green-300": "#72EB8B",
+  "green-400": "#43E465",
+  "green-500": "#14DD3E",
+  "green-600": "#10B132",
+  "green-700": "#0C8525",
+  "green-800": "#085819",
+  "green-900": "#042C0C",
+  "green-950": "#031C08",
+  "orange-25": "#FFF7F5",
+  "orange-50": "#FFE6E0",
+  "orange-100": "#FFDBD2",
+  "orange-200": "#FFB7A5",
+  "orange-300": "#FF9279",
+  "orange-400": "#FF6E4C",
+  "orange-500": "#FF4A1F",
+  "orange-600": "#CC3B19",
+  "orange-700": "#992C13",
+  "orange-800": "#661E0C",
+  "orange-900": "#330F06",
+  "orange-950": "#250B04",
+  "purple-25": "#F4F2FD",
+  "purple-50": "#EDE9FC",
+  "purple-100": "#E2DCFA",
+  "purple-200": "#C5B9F5",
+  "purple-300": "#A896EF",
+  "purple-400": "#8B73EA",
+  "purple-500": "#6E50E5",
+  "purple-600": "#5840B7",
+  "purple-700": "#423089",
+  "purple-800": "#2C205C",
+  "purple-900": "#16102E",
+  "purple-950": "#100C22",
+  "gray-25": "#F6F6F4",
+  "gray-50": "#ECECE9",
+  "gray-100": "#E4E5E1",
+  "gray-200": "#D4D5CF",
+  "gray-300": "#AEAAAA",
+  "gray-400": "#938E8E",
+  "gray-500": "#787272",
+  "gray-600": "#605B5B",
+  "gray-700": "#484444",
+  "gray-800": "#302E2E",
+  "gray-900": "#181717",
+  "gray-950": "#0A0A0A",
+  "gray-green-25": "#F1F3F3",
+  "gray-green-50": "#E4E7E6",
+  "gray-green-100": "#D0D6D4",
+  "gray-green-200": "#A0ADA9",
+  "gray-green-300": "#71857F",
+  "gray-green-400": "#415C54",
+  "gray-green-500": "#123329",
+  "gray-green-600": "#0E2921",
+  "gray-green-700": "#0B1F19",
+  "gray-green-800": "#071410",
+  "gray-green-900": "#040A08",
+  "gray-green-950": "#010403",
+  "cyan-gray-25": "#F2F3F3",
+  "cyan-gray-50": "#E2E4E4",
+  "cyan-gray-100": "#D2D4D4",
+  "cyan-gray-200": "#A5A9A9",
+  "cyan-gray-300": "#787D7E",
+  "cyan-gray-400": "#4B5253",
+  "cyan-gray-500": "#1E2728",
+  "cyan-gray-600": "#181F20",
+  "cyan-gray-700": "#121718",
+  "cyan-gray-800": "#0C1010",
+  "cyan-gray-900": "#060808",
+  "cyan-gray-950": "#020303",
+  "error-dark": "#F04438"
 };
 var space = {
   1: "0.25rem",
@@ -114,7 +196,7 @@ var radii = {
   full: "99999px"
 };
 var fonts = {
-  default: "Roboto, sans-serif",
+  default: "Poppins, Inter, sans-serif",
   code: "monospace"
 };
 var fontSizes = {
@@ -173,10 +255,9 @@ var {
 
 // src/components/Box.tsx
 var Box = styled("div", {
-  padding: "$4",
+  padding: "$6",
   borderRadius: "$md",
-  backgroundColor: "$gray800",
-  border: "1px solid $gray600"
+  backgroundColor: "$white"
 });
 Box.displayName = "Box";
 
@@ -241,8 +322,8 @@ var Avatar = __toESM(require("@radix-ui/react-avatar"));
 var AvatarContainer = styled(Avatar.Root, {
   borderRadius: "$full",
   display: "inline-block",
-  width: "$12",
-  height: "$12",
+  width: "$16",
+  height: "$16",
   overflow: "hidden"
 });
 var AvatarImage = styled(Avatar.Image, {
@@ -298,6 +379,9 @@ var Button = styled("button", {
   "&:disabled": {
     cursor: "not-allowed"
   },
+  "&:focus": {
+    boxShadow: "0 0 0 2px $colors$gray100"
+  },
   variants: {
     variant: {
       primary: {
@@ -348,21 +432,36 @@ var Button = styled("button", {
 });
 Button.displayName = "Button";
 
+// src/components/TextInput/index.tsx
+var import_react2 = require("react");
+
 // src/components/TextInput/styles.ts
 var TextInputContainer = styled("div", {
   backgroundColor: "$gray900",
-  padding: "$3 $4",
   borderRadius: "$sm",
   boxSizing: "border-box",
   border: "2px solid $gray900",
   display: "flex",
-  alignItems: "baseline",
+  alignItems: "center",
+  variants: {
+    size: {
+      sm: {
+        padding: "$2 $3"
+      },
+      md: {
+        padding: "$3 $4"
+      }
+    }
+  },
   "&:has(input:focus)": {
     borderColor: "$ignite300"
   },
   "&:has(input:disabled)": {
     opacity: 0.5,
     cursor: "not-allowed"
+  },
+  defaultVariants: {
+    size: "md"
   }
 });
 var Prefix = styled("span", {
@@ -385,20 +484,22 @@ var Input = styled("input", {
   "&:disabled": {
     cursor: "not-allowed"
   },
-  "&:placeholder": {
+  "&::placeholder": {
     color: "$gray400"
   }
 });
 
 // src/components/TextInput/index.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
-function TextInput(_a) {
-  var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, { children: [
-    !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, { children: prefix }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, props))
-  ] });
-}
+var TextInput = (0, import_react2.forwardRef)(
+  (_a, ref) => {
+    var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, { children: [
+      !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, { children: prefix }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({ ref }, props))
+    ] });
+  }
+);
 TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
@@ -437,7 +538,7 @@ var CheckboxContainer = styled(Checkbox.Root, {
   all: "unset",
   width: "$6",
   height: "$6",
-  backgroundColor: "$gray900",
+  backgroundColor: "$white",
   borderRadius: "$xs",
   lineHeight: 0,
   cursor: "pointer",
@@ -446,11 +547,11 @@ var CheckboxContainer = styled(Checkbox.Root, {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  border: "2px solid $gray900",
+  border: "1px solid $neutral-700",
   '&[data-state="checked"]': {
-    backgroundColor: "$ignite300"
+    backgroundColor: "$primary-dark"
   },
-  "&:focus": {
+  '&:focus, &[data-state="checked"]': {
     border: "2px solid $ignite300"
   }
 });
@@ -532,9 +633,27 @@ function MultiStep({ size, currentStep = 1 }) {
   ] });
 }
 MultiStep.displayName = "MultiStep";
+
+// src/components/Badge/styles.ts
+var BadgeContainer = styled("div", {
+  borderRadius: "16px",
+  padding: "0.1rem 0.3rem",
+  fontWeight: 500,
+  fontSize: "0.625rem",
+  textAlign: "center",
+  display: "inline-block"
+});
+
+// src/components/Badge/index.tsx
+var import_jsx_runtime5 = require("react/jsx-runtime");
+function Badge({ backgroundColor = "$green-600", children, color = "$white" }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(BadgeContainer, { css: { backgroundColor, color }, children });
+}
+Badge.displayName = "Badge";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
+  Badge,
   Box,
   Button,
   Checkbox,
@@ -542,5 +661,13 @@ MultiStep.displayName = "MultiStep";
   MultiStep,
   Text,
   TextArea,
-  TextInput
+  TextInput,
+  config,
+  createTheme,
+  css,
+  getCssText,
+  globalCss,
+  keyframes,
+  styled,
+  theme
 });

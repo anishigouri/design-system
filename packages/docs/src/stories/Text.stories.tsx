@@ -7,6 +7,7 @@ export default {
 
   args: {
     size: 'md',
+    color: '$white',
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi autem fuga numquam soluta ducimus eveniet a assumenda aspernatur iste excepturi cum molestiae hic illo nisi aperiam, qui perspiciatis impedit?',
   },
