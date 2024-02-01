@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@allan-koin/react-webview'
+import { Text, TextProps } from '@allan-koin/react'
 
 export default {
   title: 'Typography/Text',

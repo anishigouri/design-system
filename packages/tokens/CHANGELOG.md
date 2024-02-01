@@ -1,5 +1,11 @@
 # @allan-koin/tokens
 
+## 2.5.0
+
+### Minor Changes
+
+- create component readonlyfield
+
 ## 2.4.0
 
 ### Minor Changes

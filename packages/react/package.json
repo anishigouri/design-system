@@ -1,6 +1,6 @@
 {
-  "name": "@allan-koin/react-webview",
-  "version": "2.3.0",
+  "name": "@allan-koin/react",
+  "version": "2.4.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@allan-koin/eslint-config": "*",
     "@allan-koin/tokens": "*",

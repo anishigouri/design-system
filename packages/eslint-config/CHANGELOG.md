@@ -1,5 +1,11 @@
 # @allan-koin/eslint-config
 
+## 2.3.0
+
+### Minor Changes
+
+- create component readonlyfield
+
 ## 2.2.0
 
 ### Minor Changes

@@ -1,4 +1,11 @@
-# @allan-koin/react-webview
+# @allan-koin/react
+
+## 2.4.0
+
+### Minor Changes
+
+- create component readonlyfield
+- 5b1e800: change license
 
 ## 2.3.0
 

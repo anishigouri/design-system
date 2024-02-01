@@ -19,7 +19,6 @@ export function Badge({
     ...(type === 'secondary' && { border: `1.5px solid ${color}` }),
   }
 
-  console.log(dynamicStyles)
   return <BadgeContainer css={dynamicStyles}>{children}</BadgeContainer>
 }
 

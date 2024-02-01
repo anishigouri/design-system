@@ -1,4 +1,4 @@
-import { Badge, BadgeProps, Text } from '@allan-koin/react-webview'
+import { Badge, BadgeProps, Text } from '@allan-koin/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

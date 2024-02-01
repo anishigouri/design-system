@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Avatar, AvatarProps } from '@allan-koin/react-webview'
+import { Avatar, AvatarProps } from '@allan-koin/react'
 
 export default {
   title: 'Data display/Avatar',
