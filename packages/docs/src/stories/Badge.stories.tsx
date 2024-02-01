@@ -6,8 +6,7 @@ export default {
   component: Badge,
   args: {
     children: <Text size="xxs">Text badge</Text>,
-    backgroundColor: '$green-600',
-    color: '$white'
+    color: '$green-600',
   },
   argTypes: {
     children: {
@@ -19,3 +18,9 @@ export default {
 } as Meta<BadgeProps>
 
 export const Primary: StoryObj<BadgeProps> = {}
+
+export const Secondary: StoryObj<BadgeProps> = {
+  args: {
+    type: 'secondary',
+  },
+}

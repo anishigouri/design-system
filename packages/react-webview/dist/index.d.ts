@@ -1135,11 +1135,11 @@ declare namespace Checkbox {
 }
 
 interface BadgeProps {
-    backgroundColor?: string;
     color?: string;
     children: react__default.ReactNode;
+    type?: 'primary' | 'secondary';
 }
-declare function Badge({ backgroundColor, children, color }: BadgeProps): react_jsx_runtime.JSX.Element;
+declare function Badge({ color, children, type, }: BadgeProps): react_jsx_runtime.JSX.Element;
 declare namespace Badge {
     var displayName: string;
 }

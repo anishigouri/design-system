@@ -1,5 +1,11 @@
 # @allan-koin/react-webview
 
+## 2.3.0
+
+### Minor Changes
+
+- add secondary type in badge component
+
 ## 2.2.0
 
 ### Minor Changes

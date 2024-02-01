@@ -333,18 +333,28 @@ Checkbox2.displayName = "Checkbox";
 
 // src/components/Badge/styles.ts
 var BadgeContainer = styled("div", {
-  borderRadius: "16px",
-  padding: "0.1rem 0.3rem",
-  fontWeight: 500,
-  fontSize: "0.625rem",
+  borderRadius: "$lg",
+  padding: "2px 8px",
+  fontWeight: "$medium",
+  fontSize: "$sm",
   textAlign: "center",
   display: "inline-block"
 });
 
 // src/components/Badge/index.tsx
 import { jsx as jsx3 } from "react/jsx-runtime";
-function Badge({ backgroundColor = "$green-600", children, color = "$white" }) {
-  return /* @__PURE__ */ jsx3(BadgeContainer, { css: { backgroundColor, color }, children });
+function Badge({
+  color = "$green-600",
+  children,
+  type = "primary"
+}) {
+  const isPrimary = type === "primary";
+  const dynamicStyles = __spreadValues({
+    backgroundColor: isPrimary ? `${color}` : "transparent",
+    color: isPrimary ? "$white" : `${color}`
+  }, type === "secondary" && { border: `1.5px solid ${color}` });
+  console.log(dynamicStyles);
+  return /* @__PURE__ */ jsx3(BadgeContainer, { css: dynamicStyles, children });
 }
 Badge.displayName = "Badge";
 export {

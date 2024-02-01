@@ -1,5 +1,11 @@
 # @allan-koin/tokens
 
+## 2.4.0
+
+### Minor Changes
+
+- add secondary type in badge component
+
 ## 2.3.0
 
 ### Minor Changes
