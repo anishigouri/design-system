@@ -1,5 +1,12 @@
 # @allan-koin/react-webview
 
+## 2.2.0
+
+### Minor Changes
+
+- 7e0912d: Create component Badge
+- removes unused components
+
 ## 2.1.0
 
 ### Minor Changes
