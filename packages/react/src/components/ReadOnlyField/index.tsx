@@ -1,11 +1,11 @@
 import { ReadOnlyFieldContainer } from './styles'
 
-interface IProps {
+export interface IReadOnlyFieldProps {
   title: string
   text: string
 }
 
-export function ReadOnlyField({ title, text }: IProps) {
+export function ReadOnlyField({ title, text }: IReadOnlyFieldProps) {
   return (
     <ReadOnlyFieldContainer>
       <p>{title}</p>
