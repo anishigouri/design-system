@@ -14,14 +14,14 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  border: '1px solid $neutral-700',
+  border: '1px solid $gray-400',
 
   '&[data-state="checked"]': {
-    backgroundColor: '$primary-dark',
+    backgroundColor: '$$green-600',
   },
 
   '&:focus, &[data-state="checked"]': {
-    border: '2px solid $ignite300',
+    border: '2px solid $green-300',
   },
 })
 
@@ -44,7 +44,7 @@ const slideOut = keyframes({
 })
 
 export const CheckboxIndicator = styled(Checkbox.Indicator, {
-  color: '$white',
+  color: '$green-500',
   width: '$4',
   height: '$4',
 
