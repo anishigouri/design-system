@@ -4,5 +4,6 @@ export * from './components/Avatar'
 export * from './components/Checkbox'
 export * from './components/Badge'
 export * from './components/ReadOnlyField'
+export * from './components/Collapse'
 
 export * from './styles'
