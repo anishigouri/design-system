@@ -1,5 +1,11 @@
 # @allan-koin/react
 
+## 2.5.0
+
+### Minor Changes
+
+- 2138efa: Create ReadOnlyField component
+
 ## 2.4.0
 
 ### Minor Changes
