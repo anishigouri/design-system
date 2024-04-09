@@ -1,5 +1,15 @@
 # @allan-koin/react
 
+## 2.6.0
+
+### Minor Changes
+
+- 0ea9273: Criar componente collapse
+
+### Patch Changes
+
+- Adicionar componente collapse
+
 ## 2.5.0
 
 ### Minor Changes
