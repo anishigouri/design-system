@@ -1,5 +1,12 @@
 # @allan-koin/react
 
+## 2.5.0
+
+### Minor Changes
+
+- 2138efa: Create ReadOnlyField component
+- Remover collapse story
+
 ## 2.4.0
 
 ### Minor Changes

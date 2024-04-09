@@ -2,7 +2,7 @@ import { CaretDown, CaretUp } from '@phosphor-icons/react';
 import { ElementType, FC, useState } from 'react';
 import { CollapseContainerStyled, CollapseContentStyled, CollapseHeaderStyled } from './styles';
 
-interface ICollapseProps {
+export interface ICollapseProps {
   title: string;
   children: React.ReactNode;
   iconOpen?: ElementType;
