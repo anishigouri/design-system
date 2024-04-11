@@ -5,5 +5,6 @@ export * from './components/Checkbox'
 export * from './components/Badge'
 export * from './components/ReadOnlyField'
 export * from './components/Collapse'
+export * from './components/Button'
 
 export * from './styles'
