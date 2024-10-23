@@ -7,6 +7,8 @@ export default {
   component: Collapse,
   args: {
     title: 'Title 1',
+    color: 'black',
+    colorIcon: 'black',
     children: <Text size="xxs">Content</Text>,
   },
   argTypes: {
@@ -20,12 +22,14 @@ export default {
 
 export const Primary: StoryObj<ICollapseProps> = {}
 
-const IconClose = () => <Plus color="#1e1e1e" size={15} />;
-const IconOpen = () => <Minus color="#1e1e1e" size={15} />;
+const IconClose = () => <Plus size={15} />;
+const IconOpen = () => <Minus size={15} />;
 
 export const Secondary: StoryObj<ICollapseProps> = {
   args: {
     iconOpen: IconOpen,
-    iconClose: IconClose
+    iconClose: IconClose,
+    color: 'black',
+    colorIcon: 'bloack'
   },
 }

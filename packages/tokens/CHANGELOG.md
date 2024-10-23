@@ -1,5 +1,17 @@
 # @allan-koin/tokens
 
+## 2.7.0
+
+### Minor Changes
+
+- add color collpase title
+
+## 2.6.0
+
+### Minor Changes
+
+- exemplo
+
 ## 2.5.0
 
 ### Minor Changes

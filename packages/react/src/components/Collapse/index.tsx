@@ -1,5 +1,6 @@
-import { CaretDown, CaretUp } from '@phosphor-icons/react';
 import { ElementType, FC, useState } from 'react';
+import { CaretDown, CaretUp } from '@phosphor-icons/react';
+
 import { CollapseContainerStyled, CollapseContentStyled, CollapseHeaderStyled } from './styles';
 
 export interface ICollapseProps {
@@ -7,9 +8,18 @@ export interface ICollapseProps {
   children: React.ReactNode;
   iconOpen?: ElementType;
   iconClose?: ElementType;
+  color?: string
+  colorIcon?: string
 }
 
-export const Collapse: FC<ICollapseProps> = ({ title, children, iconOpen = CaretUp, iconClose = CaretDown }) => {
+export const Collapse: FC<ICollapseProps> = ({ 
+  title, 
+  children, 
+  iconOpen = CaretUp, 
+  iconClose = CaretDown, 
+  color = 'gray-800', 
+  colorIcon = 'gray-800' 
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const Icon = isOpen ? iconOpen : iconClose;
@@ -17,8 +27,8 @@ export const Collapse: FC<ICollapseProps> = ({ title, children, iconOpen = Caret
   return (
     <CollapseContainerStyled>
       <CollapseHeaderStyled onClick={() => setIsOpen(!isOpen)}>
-        <span>{title}</span>
-        <Icon color="#1e1e1e" size={15} />
+        <span style={{color}}>{title}</span>
+        <Icon color={colorIcon} size={15} />
       </CollapseHeaderStyled>
       <CollapseContentStyled isOpen={isOpen}>
         {children}

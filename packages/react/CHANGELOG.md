@@ -1,5 +1,17 @@
 # @allan-koin/react
 
+## 3.1.0
+
+### Minor Changes
+
+- add color collpase title
+
+## 3.0.0
+
+### Major Changes
+
+- exemplo
+
 ## 2.6.0
 
 ### Minor Changes
