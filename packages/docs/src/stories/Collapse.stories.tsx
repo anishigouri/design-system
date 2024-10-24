@@ -9,6 +9,7 @@ export default {
     title: 'Title 1',
     color: 'black',
     colorIcon: 'black',
+    fontSize: 'md',
     children: <Text size="xxs">Content</Text>,
   },
   argTypes: {
@@ -30,6 +31,7 @@ export const Secondary: StoryObj<ICollapseProps> = {
     iconOpen: IconOpen,
     iconClose: IconClose,
     color: 'black',
-    colorIcon: 'bloack'
+    colorIcon: 'black',
+    fontSize: 'md'
   },
 }

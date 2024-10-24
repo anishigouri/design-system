@@ -1,5 +1,11 @@
 # @allan-koin/react
 
+## 3.2.0
+
+### Minor Changes
+
+- add fontsize in collapse component
+
 ## 3.1.0
 
 ### Minor Changes

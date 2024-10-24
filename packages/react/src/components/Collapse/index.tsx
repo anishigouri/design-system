@@ -10,6 +10,7 @@ export interface ICollapseProps {
   iconClose?: ElementType;
   color?: string
   colorIcon?: string
+  fontSize?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl'
 }
 
 export const Collapse: FC<ICollapseProps> = ({ 
@@ -18,7 +19,8 @@ export const Collapse: FC<ICollapseProps> = ({
   iconOpen = CaretUp, 
   iconClose = CaretDown, 
   color = 'gray-800', 
-  colorIcon = 'gray-800' 
+  colorIcon = 'gray-800',
+  fontSize = 'md'
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,8 +28,8 @@ export const Collapse: FC<ICollapseProps> = ({
 
   return (
     <CollapseContainerStyled>
-      <CollapseHeaderStyled onClick={() => setIsOpen(!isOpen)}>
-        <span style={{color}}>{title}</span>
+      <CollapseHeaderStyled fontSize={fontSize} onClick={() => setIsOpen(!isOpen)}>
+        <span color={color}>{title}</span>
         <Icon color={colorIcon} size={15} />
       </CollapseHeaderStyled>
       <CollapseContentStyled isOpen={isOpen}>
