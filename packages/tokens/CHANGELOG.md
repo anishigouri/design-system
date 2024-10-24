@@ -1,5 +1,11 @@
 # @allan-koin/tokens
 
+## 2.8.0
+
+### Minor Changes
+
+- add props fontWeight and isOpen in collpase component
+
 ## 2.7.0
 
 ### Minor Changes

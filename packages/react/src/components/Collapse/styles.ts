@@ -1,3 +1,4 @@
+import { fontWeights } from "@allan-koin/tokens";
 import { styled } from "../../styles";
 
 export const CollapseContainerStyled = styled('div', {
@@ -9,8 +10,16 @@ export const CollapseHeaderStyled = styled('div', {
   justifyContent: 'space-between',
   alignItems: 'center',
   cursor: 'pointer',
-  fontWeight: '$medium',
+});
+
+export const TitleHeaderStyled = styled('span', {
   variants: {
+    fontWeight: {
+      regular: { fontWeight: '$regular' },
+      medium: { fontWeight: '$medium' },
+      semiBold: { fontWeight: '$semiBold' },
+      bold: { fontWeight: '$bold' },
+    },
     fontSize: {
       xxs: { fontSize: '$xxs' },
       xs: { fontSize: '$xs' },

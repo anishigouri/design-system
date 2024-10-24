@@ -1,5 +1,11 @@
 # @allan-koin/react
 
+## 3.3.0
+
+### Minor Changes
+
+- add props fontWeight and isOpen in collpase component
+
 ## 3.2.0
 
 ### Minor Changes
